@@ -601,51 +601,51 @@ e1 a8 d8a1 d8a2 101 182 81 201
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(110,130)" to="(130,130)"/>
-    <wire from="(440,260)" to="(500,260)"/>
-    <wire from="(110,130)" to="(110,200)"/>
+    <wire from="(180,180)" to="(200,180)"/>
     <wire from="(210,630)" to="(280,630)"/>
     <wire from="(70,440)" to="(340,440)"/>
+    <wire from="(360,180)" to="(360,210)"/>
+    <wire from="(180,180)" to="(180,250)"/>
     <wire from="(210,640)" to="(240,640)"/>
+    <wire from="(480,210)" to="(510,210)"/>
+    <wire from="(560,140)" to="(590,140)"/>
     <wire from="(240,620)" to="(240,640)"/>
     <wire from="(70,440)" to="(70,670)"/>
+    <wire from="(510,250)" to="(510,310)"/>
+    <wire from="(310,220)" to="(310,300)"/>
+    <wire from="(360,210)" to="(380,210)"/>
+    <wire from="(510,310)" to="(570,310)"/>
     <wire from="(280,520)" to="(280,530)"/>
     <wire from="(70,670)" to="(340,670)"/>
     <wire from="(340,440)" to="(340,670)"/>
     <wire from="(140,650)" to="(190,650)"/>
+    <wire from="(470,280)" to="(470,320)"/>
     <wire from="(240,520)" to="(240,540)"/>
-    <wire from="(410,160)" to="(440,160)"/>
-    <wire from="(520,70)" to="(520,90)"/>
-    <wire from="(440,100)" to="(440,160)"/>
-    <wire from="(560,70)" to="(560,80)"/>
-    <wire from="(490,80)" to="(560,80)"/>
-    <wire from="(110,200)" to="(310,200)"/>
-    <wire from="(360,230)" to="(360,250)"/>
+    <wire from="(340,180)" to="(360,180)"/>
+    <wire from="(510,150)" to="(510,210)"/>
+    <wire from="(430,280)" to="(430,300)"/>
     <wire from="(140,550)" to="(190,550)"/>
-    <wire from="(440,100)" to="(470,100)"/>
+    <wire from="(510,150)" to="(540,150)"/>
+    <wire from="(630,120)" to="(630,130)"/>
+    <wire from="(480,250)" to="(510,250)"/>
     <wire from="(210,540)" to="(240,540)"/>
-    <wire from="(440,200)" to="(440,260)"/>
-    <wire from="(290,130)" to="(290,160)"/>
-    <wire from="(270,130)" to="(290,130)"/>
-    <wire from="(410,200)" to="(440,200)"/>
-    <wire from="(400,230)" to="(400,270)"/>
+    <wire from="(560,130)" to="(630,130)"/>
     <wire from="(210,530)" to="(280,530)"/>
-    <wire from="(290,160)" to="(310,160)"/>
+    <wire from="(180,250)" to="(380,250)"/>
     <wire from="(280,620)" to="(280,630)"/>
-    <wire from="(490,90)" to="(520,90)"/>
-    <wire from="(240,170)" to="(240,250)"/>
-    <comp loc="(360,180)" name="Simple CPU"/>
-    <comp lib="0" loc="(400,270)" name="Pin">
+    <wire from="(590,120)" to="(590,140)"/>
+    <comp lib="0" loc="(310,300)" name="Pin">
       <a name="facing" val="north"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="Reset"/>
+      <a name="label" val="Clear RAM"/>
     </comp>
-    <comp lib="5" loc="(560,70)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(390,130)" name="Tunnel">
-      <a name="facing" val="south"/>
+    <comp lib="0" loc="(570,310)" name="Pin">
+      <a name="facing" val="west"/>
       <a name="width" val="8"/>
-      <a name="label" val="B Reg"/>
+      <a name="tristate" val="false"/>
     </comp>
+    <comp lib="5" loc="(590,120)" name="Hex Digit Display"/>
+    <comp loc="(430,230)" name="Simple CPU"/>
     <comp lib="5" loc="(240,620)" name="Hex Digit Display"/>
     <comp lib="0" loc="(190,650)" name="Splitter">
       <a name="incoming" val="8"/>
@@ -657,30 +657,8 @@ e1 a8 d8a1 d8a2 101 182 81 201
       <a name="bit6" val="1"/>
       <a name="bit7" val="1"/>
     </comp>
-    <comp lib="6" loc="(200,83)" name="Text">
-      <a name="text" val="RAM"/>
-    </comp>
-    <comp lib="0" loc="(240,250)" name="Pin">
-      <a name="facing" val="north"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="Clear RAM"/>
-    </comp>
-    <comp lib="0" loc="(500,260)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="width" val="8"/>
-      <a name="tristate" val="false"/>
-    </comp>
+    <comp lib="4" loc="(340,180)" name="RAM"/>
     <comp lib="5" loc="(280,520)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(470,100)" name="Splitter">
-      <a name="incoming" val="8"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="1"/>
-      <a name="bit5" val="1"/>
-      <a name="bit6" val="1"/>
-      <a name="bit7" val="1"/>
-    </comp>
     <comp lib="0" loc="(140,650)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="8"/>
@@ -691,14 +669,33 @@ e1 a8 d8a1 d8a2 101 182 81 201
       <a name="width" val="8"/>
       <a name="label" val="A Reg"/>
     </comp>
+    <comp lib="0" loc="(460,180)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="width" val="8"/>
+      <a name="label" val="B Reg"/>
+    </comp>
     <comp lib="5" loc="(240,520)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(330,130)" name="Tunnel">
+    <comp lib="0" loc="(540,150)" name="Splitter">
+      <a name="incoming" val="8"/>
+      <a name="bit1" val="0"/>
+      <a name="bit2" val="0"/>
+      <a name="bit3" val="0"/>
+      <a name="bit4" val="1"/>
+      <a name="bit5" val="1"/>
+      <a name="bit6" val="1"/>
+      <a name="bit7" val="1"/>
+    </comp>
+    <comp lib="6" loc="(212,497)" name="Text">
+      <a name="text" val="A"/>
+    </comp>
+    <comp lib="0" loc="(400,180)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="8"/>
       <a name="label" val="A Reg"/>
     </comp>
-    <comp lib="6" loc="(212,497)" name="Text">
-      <a name="text" val="A"/>
+    <comp lib="0" loc="(430,300)" name="Clock">
+      <a name="facing" val="north"/>
+      <a name="label" val="Clock"/>
     </comp>
     <comp lib="6" loc="(215,597)" name="Text">
       <a name="text" val="B"/>
@@ -706,11 +703,15 @@ e1 a8 d8a1 d8a2 101 182 81 201
     <comp lib="6" loc="(205,433)" name="Text">
       <a name="text" val="DEBUG"/>
     </comp>
+    <comp lib="5" loc="(630,120)" name="Hex Digit Display"/>
     <comp lib="5" loc="(280,620)" name="Hex Digit Display"/>
-    <comp lib="5" loc="(520,70)" name="Hex Digit Display"/>
-    <comp lib="0" loc="(360,250)" name="Clock">
+    <comp lib="6" loc="(270,133)" name="Text">
+      <a name="text" val="RAM"/>
+    </comp>
+    <comp lib="0" loc="(470,320)" name="Pin">
       <a name="facing" val="north"/>
-      <a name="label" val="Clock"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="Reset"/>
     </comp>
     <comp lib="0" loc="(190,550)" name="Splitter">
       <a name="incoming" val="8"/>
@@ -722,6 +723,5 @@ e1 a8 d8a1 d8a2 101 182 81 201
       <a name="bit6" val="1"/>
       <a name="bit7" val="1"/>
     </comp>
-    <comp lib="4" loc="(270,130)" name="RAM"/>
   </circuit>
 </project>
